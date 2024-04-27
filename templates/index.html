@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="shortcut icon" type="image/x-icon" href="logo.svg">
+    <title>Hummingbird</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="main">
+        <input type="text" name="word" id="word" placeholder="Hummingbird">
+        <div id="trscr">ˈhʌmɪŋbəːd</div>
+    </div>
+
+    <div id="add_info">
+        <div>Standard Southern British<br>English Transcription</div>
+        <div>by @TrusevicKirill</div>
+    </div>
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
