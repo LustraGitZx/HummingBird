@@ -95,6 +95,3 @@ def search(word):
     
 
 app.run('localhost', 8080)
-
-search('hummingbird')
-connection.close()

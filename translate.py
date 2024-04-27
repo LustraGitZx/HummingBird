@@ -192,15 +192,13 @@ def translate(phonetic):
             elif s.char == 'ʊ': s.char = 'ɵ'
             elif s.char == 'ɔ': s.char = 'o'
             elif s.char == 'e': s.char = 'ɛ'
-            elif s.char == 'e': s.char = 'ɛ'
-            elif s.char == 'e': s.char = 'ɛ'
-
 
         elif s.type == soundType.longvowel:
             if s.char == 'ɜ': s.char = 'əː'
             elif s.char == 'i': s.char = 'ij'
             elif s.char == 'ɔ': s.char = 'oː'
             elif s.char == 'u': s.char = 'ʉw'
+            else: s.char = s.char + 'ː'
         
         elif s.type == soundType.diphthong:
             if s.char == 'ɪə': s.char = 'ɪː'
